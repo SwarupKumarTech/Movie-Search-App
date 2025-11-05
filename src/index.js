@@ -3,16 +3,16 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom';
 import ViewDetails from './components/ViewDetails/ViewDetails';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
- <BrowserRouter basename='/Movie-Search-App/'>
+ <HashRouter basename='/Movie-Search-App/'>
     <Routes>
       <Route path='/' element={<App />}/>
       <Route path='/view/:imdbID' element={<ViewDetails />} />
     </Routes>
- </BrowserRouter>
+ </HashRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function
