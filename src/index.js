@@ -7,7 +7,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import ViewDetails from './components/ViewDetails/ViewDetails';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
- <BrowserRouter>
+ <BrowserRouter basename='/Movie-Search-App/'>
     <Routes>
       <Route path='/' element={<App />}/>
       <Route path='/view/:imdbID' element={<ViewDetails />} />
