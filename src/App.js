@@ -2,6 +2,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function App() {
   const [searchWord, setSearchWord] = React.useState('');
@@ -63,7 +64,7 @@ function App() {
                         style={{ height: '300px', objectFit: 'cover' }}
                       />
                       <div className="card-body">
-                        <a href={'view/'+ movie.imdbID} target='_blank' rel='noopener noreferrer'><h6>{movie.Title}</h6></a>
+                        <Link href={'view/'+ movie.imdbID} target='_blank' rel='noopener noreferrer'><h6>{movie.Title}</h6></Link>
                         <div>Year: {movie.Year}</div>
                         <div>Type: {movie.Type}</div>
                       </div>
