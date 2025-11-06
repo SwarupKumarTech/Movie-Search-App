@@ -64,7 +64,7 @@ function App() {
                         style={{ height: '300px', objectFit: 'cover' }}
                       />
                       <div className="card-body">
-                        <Link href={'view/'+ movie.imdbID} target='_blank' rel='noopener noreferrer'><h6>{movie.Title}</h6></Link>
+                        <a href={'view/'+ movie.imdbID} target='_blank' rel='noopener noreferrer'><h6>{movie.Title}</h6></a>
                         <div>Year: {movie.Year}</div>
                         <div>Type: {movie.Type}</div>
                       </div>
