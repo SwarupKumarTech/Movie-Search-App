@@ -2,7 +2,6 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
 import React from 'react';
-
 function App() {
   const [searchWord, setSearchWord] = React.useState('');
   const [moviesData, setMoviesData] = React.useState([]);
