@@ -29,16 +29,16 @@ function App() {
   };
 
   return (
-    <div className="container mt-5">
+    <div className="container mt-0 mb-5">
       <div className="row justify-content-center">
         <div className="col-md-7">
           <h3 className='text-light'>Search Movies</h3>
-          <div className="card mt-4 border-0 shadow-sm">
+          <div className="card mt-2 border-0 shadow-sm">
             <div className="card-body">
               <input
                 className="form-control"
                 type="text"
-                placeholder="Search movies or series"
+                placeholder="Search movies or series..."
                 value={searchWord}
                 onChange={(e) => setSearchWord(e.target.value)}
               />
@@ -50,7 +50,7 @@ function App() {
 
           {/* Display search results */}
           {moviesData.length > 0 && (
-            <div className="mt-4">
+            <div className="mt-2">
               <h5 className='text-light'>Search Results:</h5>
               <div className="row cards mb-5 bg-white border rounded" >
                 {moviesData.map((movie) => (
